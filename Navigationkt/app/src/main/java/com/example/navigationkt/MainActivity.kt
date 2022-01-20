@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         binding.naviView.setNavigationItemSelectedListener(this) //이코드로 아래 것들의 기능 사용 가능함
     }
 
+
     override fun onNavigationItemSelected(item: MenuItem): Boolean { //네비게이션 메뉴 아이템 클릭시 수행
         //메뉴 버튼 클릭시 아이템 버튼 형성됨
         when (item.itemId) //아이템 값생겼을 때, 이 아이템의 아이디 가져옴
