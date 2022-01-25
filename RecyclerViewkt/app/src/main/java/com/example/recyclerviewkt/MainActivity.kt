@@ -2,6 +2,7 @@ package com.example.recyclerviewkt
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -24,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         )
         val rvprofile = findViewById<RecyclerView>(R.id.rv_profile)
-        rvprofile.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
+        rvprofile.layoutManager = GridLayoutManager(this,3)
         rvprofile.setHasFixedSize(true) //리사이클러뷰 성능 개선
 
         rvprofile.adapter = ProfileAdapter(profileList) //위에서 선언한 리스트를 어뎁터에 변수인 profileList로 전달

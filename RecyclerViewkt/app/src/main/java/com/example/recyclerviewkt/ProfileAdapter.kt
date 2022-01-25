@@ -30,7 +30,7 @@ class ProfileAdapter(val profileList: ArrayList<Profiles>) : RecyclerView.Adapte
 
     //view에 대한 것들을 잡아줌
     class CustomViewHolder(itemview:View) : RecyclerView.ViewHolder(itemview){ //클래스안에 클래스 형성
-        val gender = itemView.findViewById<ImageView>(R.id.iv_profile) //성별
+        val gender = itemview.findViewById<ImageView>(R.id.iv_profile) //성별
         val name = itemview.findViewById<TextView>(R.id.tv_name) //이름
         val age = itemview.findViewById<TextView>(R.id.tv_age) //나이
         val job = itemview.findViewById<TextView>(R.id.tv_job) //직업
