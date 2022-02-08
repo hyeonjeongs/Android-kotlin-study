@@ -56,7 +56,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_alignParentLeft="true"
-            android:src="@drawable/cotato" />
+            android:src="@drawable/ic_woman" />
 
         <LinearLayout
             android:layout_width="match_parent"
